@@ -100,7 +100,7 @@ window.onload = function() {
 
 
 $(function() {
-  $('.navbar-nav a').click(function(e) {
+  $('.navbar-nav a', '.navbar-brand').click(function(e) {
     e.preventDefault();
     $('body, html').animate({
       scrollTop: $($.attr(this, 'href')).offset().top-50
